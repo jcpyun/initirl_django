@@ -1,7 +1,86 @@
 {% extends "base.html" %}
-
+{% load staticfiles %}
 {% block content %}
 
-{{ ref_id }}
+<div class="jumbotron" style='background-color: grey'>
+	<div class="container">
+		<div class= 'row'>
+			<div class= 'col-md-6 pull-right' style='text-align:center;'>
+				<i class="fa fa-share-alt-square fa-5x"></i>
+				<h1>Invite your friends!</h1>
+				<p>Share this unique link to your friends!</p>
+				<div class= 'well' style='background-color:white;'> {{ ref_url }} </div>
+				share</br>
+				<!-- http://www.color-hex.com/color/3b5998 -->
+				<i class="fa fa-facebook-square fa-4x" style="color: #3b5998"></i>
+				<i class="fa fa-twitter-square fa-4x" style="color: #4099ff"></i>
+				<i class="fa fa-instagram fa-4x"></i>
+						<!-- <p><a class="btn btn-success btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+			</div>
+
+			<div class='col-md-6 pull-left'>
+					<img src="{% static 'img/launch.jpg' %}" class='img-responsive img-rounded' />
+			</div>
+			 
+		</div>
+	</div>
+</div>
+
+
+
+<div class= 'container' style= 'text-align:center;'>
+<!-- {{ ref_id }} <br/> -->
+
+Joined number is: {{ count }} <br/>
+
+<!-- {{ ref_url }} -->
+	<div class="row">
+		<div class="col-sm-3">
+			<h3>5 Joined</h3>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					60%
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<h3>5 Joined</h3>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					60%
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<h3>5 Joined</h3>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					60%
+				</div>
+			</div>
+			<h4> Reward Name </h4>
+			<img src= "{% static 'img/poop.png' %}" class='img-responsive' />
+			<hr/>
+			<span style='text-align:left !important;'>
+			<h5> Rewards: </h5>
+			<ul>
+				<li>Reward 1</li>
+				<li>Reward 2</li>
+			</ul>
+		</span>
+			<hr/>
+		</div>
+		<div class="col-sm-3">
+			<h3>5 Joined</h3>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					60%
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
 {% endblock %}
 

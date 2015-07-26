@@ -1,6 +1,24 @@
 {% extends "base.html" %}
-
+{% load staticfiles %}
 {% block content %}
+
+<div class="jumbotron" style='background-color: grey'>
+      <div class="container">
+        <div class= 'col-sm-6'>
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-success btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+
+        <div class='col-sm-6'>
+          <img src="{% static 'img/background.jpg' %}" class='img-responsive' />
+       
+      </div>
+      </div>
+    </div>
+
+<hr/>   <!-- THIS CREATES LINES  -->
+<div class= "container" style='text-align:center;'>
 
 <h1> hi </h1>
 <!-- THIS BELOW CREATS BUTTONS -->
@@ -8,6 +26,6 @@
 {{ form.as_p }}
 <input type= 'submit' value = 'Join' class= 'btn' />
 </form>
-
+</div>
 {% endblock %}
 
