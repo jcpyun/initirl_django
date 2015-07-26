@@ -19,4 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'joins.views.home', name='home'),
+    ########## THE ONE BELOW MUST BE AT VERY BOTTOM
+    url(r'^(?P<ref_id>.*)$', 'joins.views.share', name='share'), ## THIS MUST BE AT VERY BOTTOM
 ]
